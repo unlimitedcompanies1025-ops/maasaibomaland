@@ -2,86 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Maasai Bomaland</title>
+<title>Maasai Boma Land</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="overlay">
-    <img src="image1.jpg" class="logo">
-    <h1>Maasai Bomaland</h1>
-    <p>Experience the culture, wildlife and beauty of Tanzania</p>
+  <div class="hero-overlay">
+    <h1>MAASAI BOMA LAND</h1>
+    <p>Authentic Maasai Culture • Tourism • Handicrafts</p>
   </div>
-</section>
-
-<!-- INTRO -->
-<section class="section light">
-<h2>Welcome to Maasai Bomaland</h2>
-<p>
-We are proud to present the authentic Maasai culture, wildlife safaris,
-handcrafted products and tourism experiences from Tanzania to the world.
-</p>
-</section>
-
-<!-- STORY -->
-<section class="section dark">
-<h2>Our Story</h2>
-<p>
-Maasai Bomaland was founded to protect Maasai heritage and connect global
-visitors with the traditional lifestyle, ceremonies, land and people of Maasai.
-</p>
 </section>
 
 <!-- SLIDER -->
 <section class="slider">
-<img src="image2.jpg">
-<img src="image3.jpg">
-<img src="image4.jpg">
-<img src="image5.jpg">
+  <img src="image1.jpg">
+  <img src="image2.jpg">
+  <img src="image3.jpg">
+  <img src="image4.jpg">
 </section>
 
-<!-- SERVICES -->
+<!-- ABOUT -->
 <section class="section light">
-<h2>What We Offer</h2>
-<ul class="services">
-<li>Maasai Cultural Tours</li>
-<li>Wildlife Safaris</li>
-<li>Traditional Handcrafts</li>
-<li>Village Experiences</li>
-<li>Storytelling and Music</li>
+<h2>About Maasai Boma Land</h2>
+<p>
+Maasai Boma Land is known for dancing, making and selling different Maasai traditional tools such as necklaces, sticks, necklace belts, maces, and traditional drinks like Ormarwa, Engotoroki and Orbusa. We also showcase Maasai ceremonies including circumcision rites and traditional leadership systems such as Olaigwanani and Laiboni.
+</p>
+</section>
+
+<!-- BUSINESS TEXT -->
+<section class="section dark">
+<h2>Company Summary</h2>
+<p>
+Maasai Boma Land is a Maasai cultural enterprise owned by the Maasai community. The business focuses on cultural tourism, village experiences and traditional products for visitors from all over the world.
+</p>
+
+<h3>Vision</h3>
+<p>To be number one in supplying Maasai traditional products and services in Tanzania and East Africa.</p>
+
+<h3>Mission</h3>
+<p>To make people’s lives better by creating employment for youth, women and elders.</p>
+
+<h3>Goals</h3>
+<ul>
+<li>Become the leading Maasai enterprise in Arusha region.</li>
+<li>Ensure high quality products and customer satisfaction.</li>
+<li>Build trust with tourists and partners.</li>
 </ul>
 </section>
 
-<!-- GALLERY -->
-<section class="section dark">
-<h2>Gallery</h2>
-<div class="gallery">
-<img src="image6.jpg">
-<img src="image7.jpg">
-<img src="image8.jpg">
-<img src="image2.jpg">
-<img src="image3.jpg">
-<img src="image4.jpg">
+<!-- CARDS -->
+<section class="cards">
+  <div class="card">
+    <img src="image5.jpg">
+    <h3>Cultural Tourism</h3>
+    <p>Experience Maasai villages, dances and lifestyle.</p>
+  </div>
+  <div class="card">
+    <img src="image6.jpg">
+    <h3>Handcrafted Products</h3>
+    <p>Authentic Maasai beads, necklaces and tools.</p>
+  </div>
+  <div class="card">
+    <img src="image7.jpg">
+    <h3>Village Experience</h3>
+    <p>Learn Maasai traditions directly from the community.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section light">
+<h2>Our Products</h2>
+<div class="products">
+  <img src="image5.jpg" onclick="openImg(this.src)">
+  <img src="image6.jpg" onclick="openImg(this.src)">
+  <img src="image7.jpg" onclick="openImg(this.src)">
+  <img src="image8.jpg" onclick="openImg(this.src)">
 </div>
 </section>
 
+<!-- POPUP -->
+<div id="popup" onclick="this.style.display='none'">
+  <img id="popupImg">
+</div>
+
 <!-- CONTACT -->
-<section class="section light">
+<section class="section dark">
 <h2>Contact Us</h2>
-<form class="contact-form">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message"></textarea>
-<button>Send Message</button>
+<form class="contact">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button>Send</button>
 </form>
 </section>
 
-<!-- FOOTER -->
-<footer>
-<p>© 2025 Maasai Bomaland | Powered by Tanzania 🇹🇿</p>
-</footer>
+<script>
+function openImg(src){
+  document.getElementById("popup").style.display="flex";
+  document.getElementById("popupImg").src=src;
+}
+</script>
 
 </body>
 </html>
