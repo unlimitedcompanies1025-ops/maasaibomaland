@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: url("bg.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: white;
 }
 
 /* HERO */
@@ -12,49 +11,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  color: white;
 }
 
 .overlay {
-  background: rgba(0,0,0,0.6);
-  padding: 40px;
+  background: rgba(0,0,0,0.7);
+  padding: 50px;
+  text-align: center;
   border-radius: 20px;
 }
 
 .logo {
-  width: 120px;
+  width: 130px;
   border-radius: 50%;
 }
 
-/* ABOUT */
-.about {
+/* SECTIONS */
+.section {
+  padding: 80px;
+  text-align: center;
+}
+
+.light {
   background: orange;
   color: black;
-  padding: 50px;
-  text-align: center;
+}
+
+.dark {
+  background: rgba(0,0,0,0.8);
+  color: white;
 }
 
 /* SLIDER */
 .slider {
   display: flex;
-  overflow: hidden;
+  width: 100%;
 }
 
 .slider img {
   width: 25%;
-  animation: slide 12s infinite;
 }
 
-/* PRODUCTS */
-.products {
-  background: rgba(0,0,0,0.7);
-  padding: 50px;
-  text-align: center;
+/* SERVICES */
+.services {
+  list-style: none;
+  font-size: 22px;
 }
 
+/* GALLERY */
 .gallery img {
-  width: 200px;
+  width: 220px;
   margin: 10px;
+  border-radius: 10px;
   transition: 0.4s;
 }
 
@@ -63,30 +71,24 @@ body {
 }
 
 /* CONTACT */
-.contact {
-  background: orange;
-  color: black;
-  padding: 40px;
-  text-align: center;
-}
-
-input, textarea {
+.contact-form input,
+.contact-form textarea {
   width: 80%;
   padding: 10px;
   margin: 10px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: black;
   color: white;
   border: none;
-  cursor: pointer;
 }
 
-@keyframes slide {
-  0% {transform: translateX(0);}
-  25% {transform: translateX(-25%);}
-  50% {transform: translateX(-50%);}
-  75% {transform: translateX(-75%);}
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
