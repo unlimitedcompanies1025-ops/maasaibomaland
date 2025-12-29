@@ -1,94 +1,115 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: url("bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+body{
+margin:0;
+font-family:Arial;
+background:url("bg.jpg") no-repeat center center fixed;
+background-size:cover;
+color:white;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.overlay {
-  background: rgba(0,0,0,0.7);
-  padding: 50px;
-  text-align: center;
-  border-radius: 20px;
+.hero-overlay{
+background:rgba(0,0,0,0.7);
+padding:60px;
+border-radius:20px;
 }
 
-.logo {
-  width: 130px;
-  border-radius: 50%;
+.slider{
+display:flex;
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px;
-  text-align: center;
+.slider img{
+width:25%;
+animation:slide 15s infinite;
 }
 
-.light {
-  background: orange;
-  color: black;
+.section{
+padding:60px;
+text-align:center;
 }
 
-.dark {
-  background: rgba(0,0,0,0.8);
-  color: white;
+.light{
+background:orange;
+color:black;
 }
 
-/* SLIDER */
-.slider {
-  display: flex;
-  width: 100%;
+.dark{
+background:rgba(0,0,0,0.8);
 }
 
-.slider img {
-  width: 25%;
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:40px;
 }
 
-/* SERVICES */
-.services {
-  list-style: none;
-  font-size: 22px;
+.card{
+background:white;
+color:black;
+width:300px;
+border-radius:15px;
+overflow:hidden;
+transition:0.4s;
 }
 
-/* GALLERY */
-.gallery img {
-  width: 220px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: 0.4s;
+.card img{
+width:100%;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
+.card:hover{
+transform:scale(1.05);
 }
 
-/* CONTACT */
-.contact-form input,
-.contact-form textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px;
+.products img{
+width:200px;
+margin:10px;
+cursor:pointer;
+transition:0.4s;
 }
 
-button {
-  padding: 10px 30px;
-  background: black;
-  color: white;
-  border: none;
+.products img:hover{
+transform:scale(1.1);
 }
 
-/* FOOTER */
-footer {
-  background: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
+#popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#popup img{
+width:60%;
+}
+
+.contact input, .contact textarea{
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 30px;
+background:black;
+color:white;
+border:none;
+}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+25%{transform:translateX(-25%);}
+50%{transform:translateX(-50%);}
+75%{transform:translateX(-75%);}
 }
