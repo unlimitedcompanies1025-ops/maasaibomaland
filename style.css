@@ -248,3 +248,16 @@ body {
   max-width:600px;
   border-radius:20px;
 }
+
+.contact-box p{
+  font-size:18px;
+  margin:15px 0;
+}
+
+.socials a{
+  background:orange;
+  padding:12px 25px;
+  border-radius:30px;
+  color:black;
+  font-weight:bold;
+}
