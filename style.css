@@ -163,3 +163,64 @@ body {
         padding: 12px 16px;
     }
 }
+
+.about-box{
+    background: linear-gradient(orange, darkorange);
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-box h2{
+    color: black;
+}
+
+.about-box p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.info-card{
+    background: rgba(0,0,0,0.7);
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.service-card{
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service-card div{
+    padding:20px;
+}
+
+/* mobile */
+@media(max-width:768px){
+    .info-cards, .service-cards{
+        grid-template-columns:1fr;
+    }
+}
